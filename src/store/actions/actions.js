@@ -45,7 +45,8 @@ export const storeResult = (res) => {
   return (dispatch) => {
     setTimeout(() => {
       // dispatch an action that will update the state
-      dispatch(storeResult);
+      // res is the payload
+      dispatch(storeResult(res));
     }, 2000);
   }
   
